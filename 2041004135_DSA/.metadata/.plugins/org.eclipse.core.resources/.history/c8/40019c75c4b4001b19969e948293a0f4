@@ -1,0 +1,44 @@
+import java.util.*;
+
+public class A1Q8 {
+	int[] getdata() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size of the array");
+		int size = sc.nextInt();
+		int mat[] = new int[size];
+		System.out.println("Enter the elements of the array");
+		for (int i = 0; i < size; i++) {
+			mat[i] = sc.nextInt();
+		}
+		return mat;
+	}
+
+	int[] DotProduct(int mat1[], int mat2[]) {
+		int mat3[] = new int[mat1.length];
+		for (int i = 0; i < mat3.length; i++) {
+			mat3[i] = mat1[i] * mat2[i];
+		}
+		return mat3;
+	}
+
+	void display(int mat[]) {
+		for (int i = 0; i < mat.length; i++) {
+			System.out.print(mat[i]+" ");
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		A1Q8 ob = new A1Q8();
+		int mat1[] = ob.getdata();
+		int mat2[] = ob.getdata();
+		System.out.println("The elements of the  1st array");
+		ob.display(mat1);
+		System.out.println("The elements of the 2nd array");
+		ob.display(mat2);
+		int mat3[] = ob.DotProduct(mat1, mat2);
+		System.out.println("The elements of the Multiplied array");
+		ob.display(mat3);
+	}
+
+}

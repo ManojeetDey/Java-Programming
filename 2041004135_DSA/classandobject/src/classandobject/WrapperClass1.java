@@ -1,0 +1,14 @@
+package classandobject;
+
+public class WrapperClass1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub4
+		Boolean myBoolean = true;
+		Integer myInt = 5;
+		Character myChar = 'A';
+		Float myFloat = 50.254f;
+
+	}
+
+}

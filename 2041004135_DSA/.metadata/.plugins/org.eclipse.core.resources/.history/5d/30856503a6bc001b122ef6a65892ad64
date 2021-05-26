@@ -1,0 +1,18 @@
+
+public class ToStringStudent {
+	int rollno;
+	String name;
+	String city;
+	ToStringStudent(int rollno,String name,String city)
+	{
+		this.rollno=rollno;
+		this.name=name;
+		this.city=city;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ToStringStudent s1= new ToStringStudent(20, "Manoj","Bokaro");
+		ToStringStudent s2= new ToStringStudent(69,"CHatter Randi","Lacchipur");
+	}
+
+}

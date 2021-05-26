@@ -1,0 +1,26 @@
+package classandobject;
+
+public class WrapperClass3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Integer myInt = 5;
+		Double myDouble = 7.99;
+		Character myChar = 'A';
+		System.out.println(myInt.intValue());
+		System.out.println(myDouble.doubleValue());
+		System.out.println(myChar.charValue());
+		Integer ob1 = 100;
+		Integer ob2 = 200;
+		Integer ob3 = 300;
+		Integer ob4 = 100;
+		System.out.println(ob1.compareTo(ob2));
+		System.out.println(ob3.compareTo(ob1));
+		System.out.println(ob1.compareTo(ob4));
+		Double dObject = Double.valueOf("12.6");
+		Integer inObject = Integer.valueOf("13");
+		System.out.println(dObject);
+		System.out.println(inObject);
+	}
+
+}

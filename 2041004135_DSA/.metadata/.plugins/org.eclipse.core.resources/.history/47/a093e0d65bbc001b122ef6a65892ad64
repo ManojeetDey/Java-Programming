@@ -1,0 +1,25 @@
+class Bike{
+	void run()
+	{
+		System.out.println("Bike is running");
+	}
+}
+class Pulsar extends Bike{
+	void run()
+	{
+		System.out.println("Pulsar is running at a speed of 90km/hr");
+	}
+}
+public class Overriding1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Pulsar obj= new Pulsar();
+		obj.run();
+		Bike ob= new Bike();
+		ob.run();
+		Bike ob1= new Pulsar();
+		ob1.run();
+	}
+
+}
